@@ -1,0 +1,172 @@
+.home{
+    width:100%;
+    margin:auto;
+    margin-top:50px;
+    padding:60px 0;
+}
+
+.home-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+.home-text p{
+    max-width:600px;
+    line-height:1.8;
+    color:#5f6b7a;
+    font-size:20px;
+}
+
+.home-text h1{
+    font-size:40px;
+    font-weight:bold;
+    color:#121826;
+    line-height:1.1;
+}
+
+.home-text span{
+    color:#FFC107;
+}
+
+.cards{
+    display:flex;
+    gap:25px;
+    margin-top:50px;
+}
+
+.card{
+    width:220px;
+    padding:35px 20px;
+    border-radius:20px;
+    background:white;
+    border:1px solid #ddd;
+    text-align:center;
+    box-shadow: 0 4px 12px rgba(3, 3, 3, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.card-details h3{
+    font-size:18px;
+    color:black;
+    margin-bottom:8px;
+}
+
+.card-details p{
+    font-size:14px;
+    color:gray;
+    margin-bottom:0;
+}
+
+.short-about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 20px;
+}
+
+.services{
+    background-color: whitesmoke;
+    padding: 50px;
+}
+
+.services-part{
+    padding: 20px;
+}
+
+.services-part h2{
+    color:black;
+    margin-bottom:20px;
+    border-bottom: 3px solid #f5b21a;
+    font-weight: bolder;
+    font-size:40px;
+    line-height:1.1;
+}
+
+.services-part p{
+    font-size:20px;
+    color:black;
+    line-height:1.8;
+    max-width:600px;
+    margin:auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 50px;
+}
+
+.service-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(3, 3, 3, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.3s;
+    padding: 40px;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    transform:translateZ(5px);
+    transform: rotateZ(1deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.service-card-body {
+    padding: 16px;
+}
+
+.service-card-body h3 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.service-card-body p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.service-card-btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+}
+
+.service-card-btn1{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: rgb(78, 78, 219);
+    color: white;
+}
+
+.service-card-btn1:hover {
+    border-color: black;
+    background-color: #f5b21a;
+    color: black;
+}
+
+.service-card-btn2{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: rgb(17, 238, 17);
+    color: white;
+}
+
+.service-card-btn2:hover {
+    border-color: black;
+    background-color: rgb(17, 238, 17);
+    color: black;
+}
