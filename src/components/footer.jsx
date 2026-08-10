@@ -1,3 +1,4 @@
+import ryantech_pic from '../assets/ryantech_logo.png'
 import './Footer.css';
 
 function Footer(){
@@ -6,7 +7,7 @@ function Footer(){
             <div className="footer-main">
 
                 <div className="footer-brand">
-                    <img src="" alt="Ryantech Solutions" />
+                    <img src={ryantech_pic} alt="Ryantech Solutions" />
 
                     <p>
                         Driving Impact with
@@ -75,7 +76,15 @@ function Footer(){
                     </p>
 
                     <div className="map">
-                        {/* google maps here */}
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.638166811631!2d36.81212597509412!3d-1.2823434987054712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f47f886b273c7%3A0x18af649015b002b9!2sRyantech%20Solutions!5e0!3m2!1sen!2ske!4v1786352813554!5m2!1sen!2ske" 
+                            width="600" 
+                            height="450" 
+                            style={{border:0}} 
+                            allowfullscreen
+                            loading="lazy" 
+                            referrerPolicy="strict-origin-when-cross-origin">
+                        </iframe>
                     </div>
                 </div>
 
@@ -102,12 +111,11 @@ function Footer(){
                     <a href="#">
                         <i className="fa-brands fa-instagram"></i>
                     </a>
-
-                    <p>
+                </div>
+                <p>
                         Copyright © 2012-2026 Ryantech Solutions Ltd.
                         All rights reserved.
-                    </p>
-                </div>
+                </p>
             </div>
         </footer>
     )

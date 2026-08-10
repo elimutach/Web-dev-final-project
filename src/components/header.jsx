@@ -22,19 +22,11 @@ function Header() {
            onMouseEnter={() => setIsOpen(true)}
            onMouseLeave={() => setIsOpen(false)}
            >
-
-            <span className="link">Website Packages ▼</span>
+          <div className="package-menu">
+            <span className="link" style={{transition: "0.4s"}}>Website Packages ▼</span>
           
           {isOpen &&(
-          <div style={{
-            backgroundColor:"whitesmoke",
-            position:"absolute",
-            top:"100%",
-            left:0,
-            width:"100%",
-            display:"flex",
-            flexDirection:"column"
-          }}>
+          <div className="dropdown">
             <Link className="link2" to="/bizna">Bizna Starter</Link>
             <Link className="link2" to="/standardbiz">Standard Biz</Link>
             <Link className="link2" to="/corporatebiz">Corporate</Link>
@@ -42,6 +34,7 @@ function Header() {
             <Link className="link2" to="/design">Design & Branding</Link>
           </div>
           )}
+          </div>
           
           </div>
           <Link className="link" to="/corporate">Corporate Training</Link>
