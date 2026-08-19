@@ -23,7 +23,7 @@ function Header() {
            onMouseLeave={() => setIsOpen(false)}
            >
           <div className="package-menu">
-            <span className="link" style={{transition: "0.4s"}}>Website Packages ▼</span>
+            <span className="link" style={{transition: "0.4s"}}>Website Packages <span className="dropdown-symbol">▼</span></span>
           
           {isOpen &&(
           <div className="dropdown">
@@ -41,7 +41,13 @@ function Header() {
           <Link className="link" to="/contact">Contact</Link>
         </nav>
         <div className="tucode-btn">
-          <button className="tucode">Tu-code Academy</button>
+          <a 
+            href="https://tucodeacademy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="tucode">Tu-code Academy</button>
+          </a>
         </div>
       </header>
   )

@@ -38,6 +38,17 @@
     color: rgb(255, 193, 7);
 }
 
+.link .dropdown-symbol{
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.7s ease;
+}
+
+.link:hover .dropdown-symbol{
+    color: rgb(255, 193, 7);
+    transform: rotate(180deg);
+}
+
 .link2{
     text-decoration: none;
     color: black;

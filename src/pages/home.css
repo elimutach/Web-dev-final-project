@@ -3,7 +3,90 @@
     margin:auto;
     margin-top:50px;
     padding:60px 0;
-    padding-top: 110px;
+}
+
+.hero{
+    background-image: url(../assets/laptop_image.jpg);
+    width: 100%;
+    height: 87vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-content h2{
+    font-weight: lighter;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.hero-content h1{
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 15px;
+}
+
+.hero-content p{
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 15px;
+}
+
+.hero-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.hero-btns button{
+    padding: 20px 45px;
+    border-radius: 8px;
+}
+
+.hero-btn1{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #f5b21a;
+    border: none;
+    transition: 0.4s;
+}
+
+.hero-btn1:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.hero-btn2{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    transition: 0.4s;
+}
+
+.hero-btn2:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .home-image img{
@@ -41,12 +124,24 @@
     width:220px;
     padding:35px 20px;
     border-radius:20px;
-    background:white;
+    background:whitesmoke;
     border:1px solid #ddd;
     text-align:center;
     box-shadow: 0 4px 12px rgba(3, 3, 3, 0.1);
     overflow: hidden;
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s ease-out;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    background-color: white;
+    border-color: #FFC107;
+    cursor: pointer;
+}
+
+.card:hover .card-details{
+    color: #FFC107;
 }
 
 .card-details h3{
@@ -65,7 +160,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-    padding: 20px;
+    padding: 80px 20px 20px;
 }
 
 .services{
@@ -118,30 +213,42 @@
 }
 
 .service-card-body {
-    padding: 16px;
+    padding: 35px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .service-card-body h3 {
-    font-size: 18px;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: black;
     margin-bottom: 8px;
+    padding: 10px;
 }
 
 .service-card-body p {
-    font-size: 14px;
-    color: gray;
+    font-size: 1rem;
+    color: black;
     margin-bottom: 0;
+    padding: 10px;
 }
 
 .service-card-btns{
     display: flex;
     justify-content: center;
-    gap: 10px;
-    padding: 16px;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.service-card-btns button{
+    padding: 5px 20px;
 }
 
 .service-card-btn1{
-    padding: 10px 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
@@ -157,7 +264,6 @@
 }
 
 .service-card-btn2{
-    padding: 10px 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;

@@ -7,6 +7,21 @@ function Home({icon, cardTitle, cardDescription, serviceIcon, serviceTitle, serv
     return(
         <div className="container">
             <div className="home">
+                <section className='hero'>
+                    <div className='hero-overlay'>
+                        <div className='hero-content'>
+                            <h2>RYANTECH SOLUTIONS</h2>
+                            <h1>Web Development Services</h1>
+                            <p>Custom websites and web applications built with modern technology</p>
+                            <div className='hero-btns'>
+                                <a href="#services">
+                                    <button className='hero-btn1'>Explore Services</button>
+                                </a>
+                                <button className='hero-btn2'><i className="fa-brands fa-whatsapp"></i> Get a quote</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <div className="short-about">
                     <div className="home-text">
                         <h1>
@@ -43,7 +58,7 @@ function Home({icon, cardTitle, cardDescription, serviceIcon, serviceTitle, serv
 
                     </div>
                 </div>
-                <div className="services">
+                <div id='services' className="services">
                     <div className="services-part">
                         <h2 style={{textAlign: 'center'}}>Our Services</h2>
                         <p style={{textAlign: 'center'}}>Comprehensive digital solutions to transform your business</p>
